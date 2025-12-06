@@ -1,5 +1,89 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+
 
 body{
-    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background-image: url('https://images.unsplash.com/photo-1517232115160-ff93364542dd?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzaW5vJTIwdGFibGV8ZW58MHx8MHx8fDA%3D');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #f2f2f2
+}
+
+.cardDiv{
+   text-align: center;
+    justify-content: center;
+    margin: auto;
+    height: 350px;
+    width: 280px;
+    border-radius: 15px;
+    background-color: white;
+    position:relative;
+  box-shadow: 21px 27px 5px -4px rgba(0,0,0,0.48);
+-webkit-box-shadow: 21px 27px 5px -4px rgba(0,0,0,0.48);
+-moz-box-shadow: 21px 27px 5px -4px rgba(0,0,0,0.48);
+}
+#upperSymbol{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 70px;
+}
+
+#lowerSymbol{
+    position:absolute;
+    bottom:15px;
+    right: 15px;
+    font-size: 70px;
+}
+#cardNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 95px;
+}
+
+@keyframes parpadeo {
+  0% { opacity: 1; } /* Opaco */
+  50% { opacity: 0; } /* Transparente */
+  100% { opacity: 1; } /* Opaco de nuevo */
+}
+.btnDiv{
+
+    display: flex;
+justify-content: center;
+margin: 10px;
+opacity: 80%;
+animation-name: parpadeo; /* Nombre de la keyframe */
+  animation-duration: 1s; /* Duración de un ciclo */
+  animation-timing-function: linear; /* Ritmo constante */
+  animation-iteration-count: infinite; 
+  
+
+}
+
+.effectTitle{
+   color: white;
+   border-radius: 10px;
+   font-size: 40px;
+   padding: 10px;
+   
+   background-color: rgba(0,0,0, 0.55);
+
+   
+}
+.paragraphStyle{
+    font-size: medium;
+    animation-name: parpadeo; /* Nombre de la keyframe */
+  animation-duration: 1s; /* Duración de un ciclo */
+  animation-timing-function: linear; /* Ritmo constante */
+  animation-iteration-count: infinite; 
+}
+
+.titulo{
+margin-bottom: 80px;
 }
